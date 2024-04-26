@@ -2,13 +2,16 @@ import React from 'react';
 import blogData from '../data/blog';
 import Header from './Header';
 import About from './About';
-console.log(blogData);
+import ArticleList from './ArticleList';
 
 function App() {
+	const { name, image, about, posts } = blogData;
+
 	return (
 		<>
-			<Header name={blogData.name} />
-			<About image={blogData.image} about={blogData.about} />
+			<Header name={name} />
+			<About image={image} about={about} />
+			<ArticleList posts={posts} />
 		</>
 	);
 }
