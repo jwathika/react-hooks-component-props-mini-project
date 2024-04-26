@@ -10,10 +10,6 @@ function ArticleList(props) {
 			/>
 		);
 	});
-	return (
-		<>
-			<main>{postsList}</main>
-		</>
-	);
+	return <main>{postsList}</main>;
 }
 export default ArticleList;
